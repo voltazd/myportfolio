@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Data Science Portfolio</title>
+  <title>Apple Analyzation - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -40,25 +40,16 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .project {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
     h1, h2 {
       color: #2c3e50;
     }
-    a {
-      color: #2980b9;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      overflow-x: auto;
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 20px;
       border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -69,36 +60,19 @@
 </header>
 
 <nav>
-  <a href="#project1">Apple Analyzation</a>
+  <a href="#apple">Apple Analyzation</a>
 </nav>
 
 <main>
-  <!-- Project 1 -->
-  <div class="project" id="project1">
+  <div class="project" id="apple">
     <h2>Project: Apple Analyzation</h2>
-    <p>
-      This project explores Apple stock data to find trends and insights using Python and data science techniques.
-    </p>
-    <p>
-      Read the full article: 
-      <a href="apple_analyzation.pdf" target="_blank">PDF file</a>
-    </p>
-    <p>
-      See the code: 
-      <a href="https://github.com/yourusername/apple-analyzation" target="_blank">GitHub Repository</a>
-    </p>
-    <h3>Example code snippet:</h3>
-    <pre><code>
-import pandas as pd
+    <p>This project explores Apple stock data to find trends and insights using Python and data science techniques. Below is the full article:</p>
+    
+    <!-- Embed the PDF directly -->
+    <iframe src="apple_analyzation.pdf" style="width:100%; min-height:600px;"></iframe>
 
-# Example: calculate average stock price
-data = pd.read_csv('apple_stock.csv')
-average_price = data['Close'].mean()
-print(average_price)
-    </code></pre>
   </div>
 </main>
 
 </body>
 </html>
-
